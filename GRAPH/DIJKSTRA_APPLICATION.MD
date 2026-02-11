@@ -19,7 +19,7 @@ class Solution {
         
         vector<int> result(n+1, INT_MAX); // to store total distance from source to every node
         
-        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> que;
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> que; // min heap
         
         que.push({0, 1}); // 1 is the source node
         result[1] = 0;
